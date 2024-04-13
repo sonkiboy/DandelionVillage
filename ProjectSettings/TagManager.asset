@@ -1,0 +1,54 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Room
+  - Dandelions
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - PlayerController
+  - Water
+  - UI
+  - Interactable
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Enviornemnt
+    uniqueID: 1399395215
+    locked: 0
+  - name: Player
+    uniqueID: 352123415
+    locked: 0
+  - name: Structures
+    uniqueID: 493809109
+    locked: 0
