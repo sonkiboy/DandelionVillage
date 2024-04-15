@@ -74,7 +74,7 @@ public class PlayerController : MonoBehaviour, IDataPersistance
     {
         animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
-        dialogueManager = GameObject.Find("Canvas").GetComponent<DialogueManager>();
+        dialogueManager = GameObject.Find("GameManager").GetComponent<DialogueManager>();
 
         playerControls = new PlayerInput();
     }

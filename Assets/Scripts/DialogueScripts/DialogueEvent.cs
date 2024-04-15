@@ -12,7 +12,8 @@ public class DialogueEvent
         CharacterDialogue,
         CollectDandelion,
         Choice,
-        ChangeIndex
+        ChangePage,
+        EndDialogue
 
     }
 
@@ -28,5 +29,5 @@ public class DialogueEvent
     public string ChoiceTwoText;
     public int ChoiceTwoDestination;
 
-    public int IndexToChangeTo;
+    public int PageToChangeTo;
 }

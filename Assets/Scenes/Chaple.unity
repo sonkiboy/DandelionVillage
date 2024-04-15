@@ -580,6 +580,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 1623199842347383287, guid: 62a5b6c9364e01c43a12178cdd8529c0, type: 3}
+      propertyPath: m_Name
+      value: ChoiceTwoText
+      objectReference: {fileID: 0}
     - target: {fileID: 2988726811482426629, guid: 62a5b6c9364e01c43a12178cdd8529c0, type: 3}
       propertyPath: m_fontColor.b
       value: 1
@@ -676,6 +680,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4939043495535637172, guid: 62a5b6c9364e01c43a12178cdd8529c0, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5863380475650747752, guid: 62a5b6c9364e01c43a12178cdd8529c0, type: 3}
       propertyPath: m_fontColor.b
       value: 1
@@ -691,6 +699,10 @@ PrefabInstance:
     - target: {fileID: 5863380475650747752, guid: 62a5b6c9364e01c43a12178cdd8529c0, type: 3}
       propertyPath: m_fontColor32.rgba
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8363976753598184443, guid: 62a5b6c9364e01c43a12178cdd8529c0, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
