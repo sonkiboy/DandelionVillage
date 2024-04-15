@@ -280,6 +280,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 2446928331198596851}
   - {fileID: 5806385823031566120}
   - {fileID: 7549666454773280521}
   m_Father: {fileID: 0}
@@ -526,7 +527,7 @@ GameObject:
   - component: {fileID: 6696335898537699886}
   - component: {fileID: 9056903606264737607}
   m_Layer: 5
-  m_Name: 'ChoiceTwoText '
+  m_Name: ChoiceTwoText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -805,7 +806,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4175613192569104674}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -813,7 +814,7 @@ RectTransform:
   - {fileID: 3849949817239226141}
   - {fileID: 2366534133310897588}
   - {fileID: 2066248519483773711}
-  m_Father: {fileID: 7549666454773280521}
+  m_Father: {fileID: 4825212640716067926}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -850,7 +851,6 @@ RectTransform:
   m_Children:
   - {fileID: 2109385113116338131}
   - {fileID: 2603537158192252117}
-  - {fileID: 2446928331198596851}
   m_Father: {fileID: 4825212640716067926}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -1009,7 +1009,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2603537158192252117
 RectTransform:
   m_ObjectHideFlags: 0
