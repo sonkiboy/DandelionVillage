@@ -113,6 +113,7 @@ public class DialogueManager : MonoBehaviour
         action.Enable();
         navigation.Enable();
 
+        playerController = FindAnyObjectByType<PlayerController>();
         playerController.CurrentMoveRestrict = PlayerController.MovementRestrictions.InDialogue;
 
         currentDialogue = events;
@@ -132,6 +133,7 @@ public class DialogueManager : MonoBehaviour
         action.Disable();
         navigation.Enable();
 
+        playerController = FindAnyObjectByType<PlayerController>();
         playerController.CurrentMoveRestrict = PlayerController.MovementRestrictions.NoRestriction;
     }
 
