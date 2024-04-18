@@ -95,7 +95,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638464721547252058
+  platformSettingsDirtyTick: 638489953580916663
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -712,6 +712,26 @@ ScriptedImporter:
       width: 16
       height: 16
     spriteID: 459a36f3f7b2f40078f8e9180043d750
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: DV_DecorTiles_28
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 6
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 51
+      y: 51
+      width: 16
+      height: 16
+    spriteID: 50045f6757960e640872fd8100b35d63
     spriteBone: []
     spriteOutline: []
     vertices: []
