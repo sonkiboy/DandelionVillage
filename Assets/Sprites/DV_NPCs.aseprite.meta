@@ -260,6 +260,26 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
+  - name: DV_NPCs_6
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 6
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 68
+      y: 21
+      width: 16
+      height: 16
+    spriteID: c2b3b30c123b1e24e86d82d0a12523c7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
   asepriteLayers:
   - layerIndex: 0
     guid: 609307287
@@ -273,7 +293,7 @@ ScriptedImporter:
       cellRect:
         x: 0
         y: 127
-        width: 48
+        width: 79
         height: 33
       spriteId: 0970cc3dfbb53c248ba72c39166e974a
     linkedCells: []

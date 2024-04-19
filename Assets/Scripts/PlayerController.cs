@@ -63,8 +63,30 @@ public class PlayerController : MonoBehaviour, IDataPersistance
 
     public float Speed = 1;
 
-    
+    bool _startUp = false;
 
+    bool startUp
+    {
+        get { return _startUp; }
+        set
+        {
+            if (value)
+            {
+                _startUp = value;
+                StartCoroutine(startUpCooldown());
+            }
+            else
+            {
+                _startUp = value;
+            }
+        }
+    }
+
+    IEnumerator startUpCooldown()
+    {
+        yield return new WaitForSeconds(.1f);
+        startUp = false;
+    }
 
     PlayerInput playerControls;
     InputAction move;
@@ -94,18 +116,27 @@ public class PlayerController : MonoBehaviour, IDataPersistance
     private void OnDisable()
     {
         move.Disable();
+        action.Disable();
     }
 
 
     public void LoadData(GameData data)
     {
+        //Debug.Log($"Loading Player Data | Spawn Point: {DataManager.instance.Data.SpawnPointName}");
+
         if (DataManager.instance.Data.SpawnPointName != string.Empty)
         {
+            //Debug.Log($"Looking for spawn at {DataManager.instance.Data.SpawnPointName} | found {GameObject.Find(DataManager.instance.Data.SpawnPointName)}");
+
             Transform spawnTransform = GameObject.Find(DataManager.instance.Data.SpawnPointName).transform.Find("SpawnPoint");
+
+            Debug.Log($"Spawning at {spawnTransform.position} | {spawnTransform.localPosition}");
 
             this.transform.position = spawnTransform.position;
             this.transform.rotation = spawnTransform.rotation;
         }
+
+        startUp = true;
         
     }
 
@@ -212,7 +243,12 @@ public class PlayerController : MonoBehaviour, IDataPersistance
         }
 
         //Debug.Log($"Entering new room, moving player from {rb.position} to {offset}");
-        transform.position = (offset);
+
+        if (!startUp)
+        {
+            transform.position = (offset);
+        }
+        
     }
 
     private void Action(InputAction.CallbackContext context)

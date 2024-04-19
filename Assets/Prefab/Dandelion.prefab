@@ -100,7 +100,7 @@ MonoBehaviour:
     ChoiceOneDestination: 0
     ChoiceTwoText: 
     ChoiceTwoDestination: 0
-    IndexToChangeTo: 0
+    PageToChangeTo: 0
   - Type: 2
     TextSpeed: 0
     DialogueText: 
@@ -108,7 +108,7 @@ MonoBehaviour:
     ChoiceOneDestination: 0
     ChoiceTwoText: 
     ChoiceTwoDestination: 0
-    IndexToChangeTo: 0
+    PageToChangeTo: 0
 --- !u!1 &6066692945815011611
 GameObject:
   m_ObjectHideFlags: 0
@@ -119,6 +119,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2483029996662975125}
   - component: {fileID: 583243313196328053}
+  - component: {fileID: 834021667335439241}
   m_Layer: 0
   m_Name: Sprite
   m_TagString: Untagged
@@ -193,3 +194,24 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &834021667335439241
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6066692945815011611}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 62fdf8a68249fbe4d81ca7accf85d87e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

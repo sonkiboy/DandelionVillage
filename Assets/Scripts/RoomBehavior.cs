@@ -14,6 +14,8 @@ public class RoomBehavior : MonoBehaviour
 
     #endregion 
 
+    public Color RoomTextColor;
+
     private void Awake()
     {
         virtualCam = GameObject.Find("Virtual Camera");
@@ -37,9 +39,11 @@ public class RoomBehavior : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         //Debug.Log("Trigger hit");
-
+        
         cameraConfiner.m_BoundingShape2D = containterCollider;
         collision.gameObject.GetComponent<PlayerController>().MoveToRoom();
+
+        GameObject.FindAnyObjectByType<DialogueManager>().ChangeUiColors(RoomTextColor);
         
     }
 }

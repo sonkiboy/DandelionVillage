@@ -86,9 +86,12 @@ public class DataManager : MonoBehaviour
 
     public void LoadGame()
     {
-        
+        foreach (IDataPersistance obj in dataPersistances)
+        {
+            obj.LoadData(instance.Data);
+        }
 
-        
+
     }
 
     private List<IDataPersistance> GetAllDataObjects()

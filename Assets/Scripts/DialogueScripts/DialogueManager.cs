@@ -5,11 +5,18 @@ using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using UnityEngine.UIElements;
+using UnityEngine.UI;
 
 public class DialogueManager : MonoBehaviour
 {
     #region Component And Object Refs
+
+    GameObject uiObj;
+    Image topBar;
+    TextMeshProUGUI nameText;
+    TextMeshProUGUI currentDandelions;
+    TextMeshProUGUI maxDandelions;
+
     GameObject dialogueObj;
     TextMeshProUGUI dialogueText;
 
@@ -75,6 +82,13 @@ public class DialogueManager : MonoBehaviour
         choiceOne = choice1Obj.GetComponent<TextMeshProUGUI>();
         choiceTwo = choice2Obj.GetComponent<TextMeshProUGUI>();
         selectionArrow = choicesObj.transform.Find("SelectionArrow").gameObject.GetComponent<RectTransform>();
+
+        uiObj = GameObject.Find("UI");
+        
+        topBar = uiObj.transform.Find("BG").GetComponent<Image>();
+        nameText = uiObj.transform.Find("NameText").GetComponent<TextMeshProUGUI>();
+        currentDandelions = uiObj.transform.Find("Score").GetComponent<TextMeshProUGUI>();
+        maxDandelions = uiObj.transform.Find("ScoreMax").GetComponent<TextMeshProUGUI>();
 
 
     }
@@ -372,5 +386,16 @@ public class DialogueManager : MonoBehaviour
 
     }
 
+    public void ChangeUiColors(Color newColor)
+    {
+        dialogueText.color = newColor;
+        choiceOne.color = newColor;
+        choiceTwo.color = newColor;
+        nameText.color = newColor;
+        currentDandelions.color = newColor;
+        maxDandelions.color = newColor;
+        topBar.color = newColor;
+        selectionArrow.GetComponent<Image>().color = newColor;
+    }
 
 }
