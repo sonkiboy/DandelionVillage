@@ -26,7 +26,7 @@ public class GlitchMap : MonoBehaviour
     private void Awake()
     {
         inputActions = new PlayerInput();
-        action = inputActions.UI.Debug;
+        action = inputActions.UI.Glitch;
         action.performed += RandomizeTiles;
     }
 

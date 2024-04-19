@@ -336,6 +336,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "Glitch",
+                    "type": "Button",
+                    "id": "9147d059-457d-4fbe-a428-d822a23bc6ca",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -782,7 +791,7 @@
                 {
                     "name": "",
                     "id": "df5b9bd6-fe37-411f-8068-35adcd4e350b",
-                    "path": "<Keyboard>/l",
+                    "path": "<Keyboard>/k",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -798,6 +807,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "Debug",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "153c9c06-b968-4b1a-88dc-02ad5784bdab",
+                    "path": "<Keyboard>/l",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Glitch",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

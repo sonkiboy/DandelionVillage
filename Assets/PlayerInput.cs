@@ -358,6 +358,15 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Glitch"",
+                    ""type"": ""Button"",
+                    ""id"": ""9147d059-457d-4fbe-a428-d822a23bc6ca"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -804,7 +813,7 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""df5b9bd6-fe37-411f-8068-35adcd4e350b"",
-                    ""path"": ""<Keyboard>/l"",
+                    ""path"": ""<Keyboard>/k"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -820,6 +829,17 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""Debug"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""153c9c06-b968-4b1a-88dc-02ad5784bdab"",
+                    ""path"": ""<Keyboard>/l"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Glitch"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -907,6 +927,7 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
         m_UI_TrackedDeviceOrientation = m_UI.FindAction("TrackedDeviceOrientation", throwIfNotFound: true);
         m_UI_Action = m_UI.FindAction("Action", throwIfNotFound: true);
         m_UI_Debug = m_UI.FindAction("Debug", throwIfNotFound: true);
+        m_UI_Glitch = m_UI.FindAction("Glitch", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -1034,6 +1055,7 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
     private readonly InputAction m_UI_TrackedDeviceOrientation;
     private readonly InputAction m_UI_Action;
     private readonly InputAction m_UI_Debug;
+    private readonly InputAction m_UI_Glitch;
     public struct UIActions
     {
         private @PlayerInput m_Wrapper;
@@ -1050,6 +1072,7 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
         public InputAction @TrackedDeviceOrientation => m_Wrapper.m_UI_TrackedDeviceOrientation;
         public InputAction @Action => m_Wrapper.m_UI_Action;
         public InputAction @Debug => m_Wrapper.m_UI_Debug;
+        public InputAction @Glitch => m_Wrapper.m_UI_Glitch;
         public InputActionMap Get() { return m_Wrapper.m_UI; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -1095,6 +1118,9 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
             @Debug.started += instance.OnDebug;
             @Debug.performed += instance.OnDebug;
             @Debug.canceled += instance.OnDebug;
+            @Glitch.started += instance.OnGlitch;
+            @Glitch.performed += instance.OnGlitch;
+            @Glitch.canceled += instance.OnGlitch;
         }
 
         private void UnregisterCallbacks(IUIActions instance)
@@ -1135,6 +1161,9 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
             @Debug.started -= instance.OnDebug;
             @Debug.performed -= instance.OnDebug;
             @Debug.canceled -= instance.OnDebug;
+            @Glitch.started -= instance.OnGlitch;
+            @Glitch.performed -= instance.OnGlitch;
+            @Glitch.canceled -= instance.OnGlitch;
         }
 
         public void RemoveCallbacks(IUIActions instance)
@@ -1216,5 +1245,6 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
         void OnTrackedDeviceOrientation(InputAction.CallbackContext context);
         void OnAction(InputAction.CallbackContext context);
         void OnDebug(InputAction.CallbackContext context);
+        void OnGlitch(InputAction.CallbackContext context);
     }
 }
