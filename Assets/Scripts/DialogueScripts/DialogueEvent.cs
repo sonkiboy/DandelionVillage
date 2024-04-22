@@ -13,7 +13,9 @@ public class DialogueEvent
         CollectDandelion,
         Choice,
         ChangePage,
-        EndDialogue
+        EndDialogue,
+        GlitchMap,
+        QuitGame,
 
     }
 

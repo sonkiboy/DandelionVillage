@@ -45,7 +45,13 @@ public class GlitchMap : MonoBehaviour
 
     public void RandomizeTiles(InputAction.CallbackContext context)
     {
-        if(GlitchTiles.Length == 0)
+        RandomizeTiles();
+
+    }
+
+    public void RandomizeTiles()
+    {
+        if (GlitchTiles.Length == 0)
         {
             Debug.LogError("Glitch tiles not assigned");
             return;
@@ -53,8 +59,8 @@ public class GlitchMap : MonoBehaviour
 
         Vector3Int playerPos = Vector3Int.RoundToInt(GameObject.FindAnyObjectByType<PlayerController>().transform.position);
 
-  
-        for (int xPos = -(Mathf.RoundToInt(GlitchRadius/2)); xPos < (Mathf.RoundToInt(GlitchRadius / 2)); xPos++)
+
+        for (int xPos = -(Mathf.RoundToInt(GlitchRadius / 2)); xPos < (Mathf.RoundToInt(GlitchRadius / 2)); xPos++)
         {
             for (int yPos = -(Mathf.RoundToInt(GlitchRadius / 2)); yPos < (Mathf.RoundToInt(GlitchRadius / 2)); yPos++)
             {
@@ -63,12 +69,11 @@ public class GlitchMap : MonoBehaviour
                 GroundMap.SetTile(new Vector3Int(xPos + playerPos.x, yPos + playerPos.y), GlitchTiles[randomNumber]);
             }
 
-            
 
-            
+
+
 
         }
-
     }
 
     

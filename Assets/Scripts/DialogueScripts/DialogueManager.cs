@@ -208,6 +208,22 @@ public class DialogueManager : MonoBehaviour
 
                     CloseDialogue();
                     break;
+
+                case DialogueEvent.DialogueEventType.GlitchMap:
+
+                    StartCoroutine(GlitchOverTime(nextEvent.TextSpeed));
+
+                    break;
+
+                case DialogueEvent.DialogueEventType.QuitGame:
+
+                    Debug.Log("Quit Triggered");
+
+                    Application.Quit();
+
+                    break;
+
+
             }
         }
 
@@ -396,6 +412,22 @@ public class DialogueManager : MonoBehaviour
         maxDandelions.color = newColor;
         topBar.color = newColor;
         selectionArrow.GetComponent<Image>().color = newColor;
+    }
+
+    IEnumerator GlitchOverTime(float speed)
+    {
+
+        GlitchMap glitch = GameObject.FindAnyObjectByType<GlitchMap>();
+
+        for (int i = 0; i < 5; i++)
+        {
+            glitch.RandomizeTiles();
+
+            yield return new WaitForSeconds(speed);
+        }
+
+        dialogueIndex++;
+        PlayDialogue();
     }
 
 }
