@@ -10,7 +10,8 @@ public class GameData
     public string SpawnPointName;
 
     public int MaxDandelions;
-    public int CurrentDandelions;
+    public int CurrentDandelions = 0;
+    public int GiftedDandelions = 0;
 
     public Dictionary<GameObject, bool> DandelionsInGame = new Dictionary<GameObject, bool>();
 

@@ -52,3 +52,6 @@ TagManager:
   - name: Structures
     uniqueID: 493809109
     locked: 0
+  - name: UI
+    uniqueID: 690480777
+    locked: 0

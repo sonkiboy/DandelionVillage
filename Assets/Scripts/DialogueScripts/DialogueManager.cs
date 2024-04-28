@@ -187,9 +187,23 @@ public class DialogueManager : MonoBehaviour
 
                     break;
 
+                case DialogueEvent.DialogueEventType.GiftDandelion:
+
+                    GiftDandelion();
+
+                    break;
+
                 case DialogueEvent.DialogueEventType.Choice:
 
-                    
+                    if (nextEvent.checkDandelion)
+                    {
+                        if(DataManager.instance.Data.CurrentDandelions < 1)
+                        {
+                            Debug.Log("Not enough Dandelions, ending dialogue");
+                            CloseDialogue();
+                            break;
+                        }
+                    }
 
                     choicesObj.SetActive(true);
                     
@@ -197,13 +211,23 @@ public class DialogueManager : MonoBehaviour
 
                     break;
 
-                case DialogueEvent.DialogueEventType.ChangePage:
+                case DialogueEvent.DialogueEventType.GoToIndex:
 
                     dialogueIndex = nextEvent.PageToChangeTo;
                     
                     PlayDialogue();
 
                     break;
+
+                case DialogueEvent.DialogueEventType.SetStartIndex:
+                    interactingObject.GetComponent<DialogueComponent>().StartingEventIndex = nextEvent.PageToChangeTo;
+
+                    dialogueIndex++;
+
+                    PlayDialogue();
+
+                    break;
+
                 case DialogueEvent.DialogueEventType.EndDialogue:
 
                     CloseDialogue();
@@ -293,6 +317,8 @@ public class DialogueManager : MonoBehaviour
         }
 
         DataManager.instance.Data.CurrentDandelions++;
+
+        currentDandelions.text = DataManager.instance.Data.CurrentDandelions.ToString();
 
         Destroy(interactingObject);
 
@@ -425,6 +451,17 @@ public class DialogueManager : MonoBehaviour
 
             yield return new WaitForSeconds(speed);
         }
+
+        dialogueIndex++;
+        PlayDialogue();
+    }
+
+    void GiftDandelion()
+    {
+        DataManager.instance.Data.GiftedDandelions++;
+        DataManager.instance.Data.CurrentDandelions--;
+
+        currentDandelions.text = DataManager.instance.Data.CurrentDandelions.ToString();
 
         dialogueIndex++;
         PlayDialogue();

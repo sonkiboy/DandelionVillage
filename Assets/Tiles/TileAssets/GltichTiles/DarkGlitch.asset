@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13b75c95f34a00d4e8c04f76b73312e6, type: 3}
+  m_Name: DarkGlitch
+  m_EditorClassIdentifier: 
+  m_AnimatedSprites:
+  - {fileID: -3743673294499454904, guid: c6826c471d72d2a498465ef13c85cfe5, type: 3}
+  - {fileID: 8026292726712333909, guid: c6826c471d72d2a498465ef13c85cfe5, type: 3}
+  - {fileID: -2593758778753409440, guid: c6826c471d72d2a498465ef13c85cfe5, type: 3}
+  - {fileID: 2007516813879339231, guid: c6826c471d72d2a498465ef13c85cfe5, type: 3}
+  - {fileID: -2603373803247793400, guid: c6826c471d72d2a498465ef13c85cfe5, type: 3}
+  - {fileID: 6615441071458958722, guid: c6826c471d72d2a498465ef13c85cfe5, type: 3}
+  - {fileID: 3261911532362324698, guid: c6826c471d72d2a498465ef13c85cfe5, type: 3}
+  - {fileID: 810469966082911613, guid: c6826c471d72d2a498465ef13c85cfe5, type: 3}
+  - {fileID: 4406998477183456993, guid: c6826c471d72d2a498465ef13c85cfe5, type: 3}
+  - {fileID: -6604325056216056372, guid: c6826c471d72d2a498465ef13c85cfe5, type: 3}
+  - {fileID: 3101920911366641429, guid: c6826c471d72d2a498465ef13c85cfe5, type: 3}
+  - {fileID: 636134834893479563, guid: c6826c471d72d2a498465ef13c85cfe5, type: 3}
+  - {fileID: -4611275693570179612, guid: c6826c471d72d2a498465ef13c85cfe5, type: 3}
+  m_MinSpeed: 1
+  m_MaxSpeed: 7
+  m_AnimationStartTime: 0
+  m_AnimationStartFrame: 0
+  m_TileColliderType: 0
+  m_TileAnimationFlags: 0

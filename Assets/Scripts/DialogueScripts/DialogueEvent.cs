@@ -11,8 +11,10 @@ public class DialogueEvent
         BasicDialogue,
         CharacterDialogue,
         CollectDandelion,
+        GiftDandelion,
         Choice,
-        ChangePage,
+        GoToIndex,
+        SetStartIndex,
         EndDialogue,
         GlitchMap,
         QuitGame,
@@ -20,6 +22,8 @@ public class DialogueEvent
     }
 
     public DialogueEventType Type;
+
+    public bool checkDandelion = false;
 
     public int TextSpeed = 1;
 
