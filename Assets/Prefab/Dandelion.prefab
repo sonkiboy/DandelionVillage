@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5895392237376837151}
   - component: {fileID: 7918950338820403085}
   - component: {fileID: 2881526731461367365}
+  - component: {fileID: 4159825265616579779}
   m_Layer: 6
   m_Name: Dandelion
   m_TagString: Dandelions
@@ -94,6 +95,7 @@ MonoBehaviour:
   StartingEventIndex: 0
   ListOfEvents:
   - Type: 0
+    checkDandelion: 0
     TextSpeed: 1
     DialogueText: You got a Dandelion! Try giving it to someone!
     ChoiceOneText: 
@@ -102,6 +104,7 @@ MonoBehaviour:
     ChoiceTwoDestination: 0
     PageToChangeTo: 0
   - Type: 2
+    checkDandelion: 0
     TextSpeed: 0
     DialogueText: 
     ChoiceOneText: 
@@ -109,6 +112,18 @@ MonoBehaviour:
     ChoiceTwoText: 
     ChoiceTwoDestination: 0
     PageToChangeTo: 0
+--- !u!114 &4159825265616579779
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 421653238215381842}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bce9b5da24abb194cbf5361deb185571, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6066692945815011611
 GameObject:
   m_ObjectHideFlags: 0

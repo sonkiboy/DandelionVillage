@@ -59,6 +59,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fbdefac2f38f15478f48c60fe7c0f2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  transition: {fileID: 0}
   Data:
     SpawnPointName: 
     MaxDandelions: 8
@@ -167,6 +168,7 @@ MonoBehaviour:
   - {fileID: 8948786033029930419, guid: 0b06987f567c2e04f940d4259e8aff31, type: 3}
   - {fileID: 382071879125168370, guid: 0b06987f567c2e04f940d4259e8aff31, type: 3}
   - {fileID: 5180622289130035255, guid: 0b06987f567c2e04f940d4259e8aff31, type: 3}
+  isFading: 0
 --- !u!1 &7333749184912865773
 GameObject:
   m_ObjectHideFlags: 0
@@ -583,9 +585,10 @@ PrefabInstance:
     m_RemovedGameObjects:
     - {fileID: 5823887303941431165, guid: 62a5b6c9364e01c43a12178cdd8529c0, type: 3}
     - {fileID: 6295800887959212267, guid: 62a5b6c9364e01c43a12178cdd8529c0, type: 3}
+    - {fileID: 899360159958495307, guid: 62a5b6c9364e01c43a12178cdd8529c0, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 4825212640716067926, guid: 62a5b6c9364e01c43a12178cdd8529c0, type: 3}
-      insertIndex: 4
+      insertIndex: -1
       addedObject: {fileID: 676803601707633681}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 62a5b6c9364e01c43a12178cdd8529c0, type: 3}

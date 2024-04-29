@@ -26,7 +26,7 @@ public class ChangeSceneBehavior : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log($"Scene trigger hit, found: {collision.gameObject.name}");
+        //Debug.Log($"Scene trigger hit, found: {collision.gameObject.name}");
 
         if (collision.gameObject.tag == "Player")
         {

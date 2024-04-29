@@ -7,6 +7,8 @@ using UnityEngine.InputSystem;
 using System.Diagnostics.Tracing;
 using UnityEngine.InputSystem.Utilities;
 using System;
+using UnityEngine.Rendering;
+using Unity.VisualScripting;
 
 
 // SAVE AND LOAD SYSTEM TAKEN FROM "SHAPED BY RAIN STUDIOS" ON YOUTUBE: https://youtu.be/aUi9aijvpgs?si=zG_XG2aithbQpy7E https://youtu.be/ijVA5Z-Mbh8?si=4_8k6C5QAXMqG7HU
@@ -56,7 +58,7 @@ public class DataManager : MonoBehaviour
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         this.dataPersistances = GetAllDataObjects();
-        GetAllDandelions();
+        //GetAllDandelions();
         
         LoadGame();
     }
@@ -64,7 +66,7 @@ public class DataManager : MonoBehaviour
     void OnSceneUnloaded(Scene scene)
     {
         
-        SaveGame();
+        
     }
     private void Start()
     {
@@ -79,9 +81,10 @@ public class DataManager : MonoBehaviour
 
     public void SaveGame()
     {
-        
+        this.dataPersistances = GetAllDataObjects();
 
-        foreach(IDataPersistance obj in dataPersistances)
+
+        foreach (IDataPersistance obj in dataPersistances)
         {
             obj.SaveData(ref instance.Data);
         }
@@ -91,7 +94,7 @@ public class DataManager : MonoBehaviour
 
     public void LoadGame()
     {
-
+        DataManager.instance.Data.CurrentSceneName = SceneManager.GetActiveScene().name;
 
         foreach (IDataPersistance obj in dataPersistances)
         {
@@ -123,10 +126,7 @@ public class DataManager : MonoBehaviour
 
         foreach(GameObject obj in objs)
         {
-            if (!instance.Data.DandelionsInGame.ContainsKey(obj))
-            {
-                instance.Data.DandelionsInGame.Add(obj, true);
-            }
+            
             
         }
     }
@@ -142,10 +142,11 @@ public class DataManager : MonoBehaviour
     IEnumerator TransitionScene(string SpawnPointName, string GoToScene)
     {
 
-
+        DataManager.instance.SaveGame();
 
         // put the spawn point name into the data manager script so the player controller can use it
         DataManager.instance.Data.SpawnPointName = SpawnPointName;
+        DataManager.instance.Data.CurrentSceneName = GoToScene;
 
         UITransision transision = FindAnyObjectByType<UITransision>();
 
@@ -156,7 +157,7 @@ public class DataManager : MonoBehaviour
             yield return null;
         }
 
-        DataManager.instance.SaveGame();
+        
         
         yield return null;
         

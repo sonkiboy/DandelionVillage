@@ -75,7 +75,7 @@ public class UITransision : MonoBehaviour
 
         float rate = time / sprites.Length;
 
-        for (int i = sprites.Length - 1; i > 0; i--)
+        for (int i = sprites.Length - 1; i >= 0; i--)
         {
             //Debug.Log($"setp {i}: setting image to {sprites[i]}");
 

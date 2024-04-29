@@ -149,6 +149,8 @@ public class DialogueManager : MonoBehaviour
 
         playerController = FindAnyObjectByType<PlayerController>();
         playerController.CurrentMoveRestrict = PlayerController.MovementRestrictions.NoRestriction;
+
+        DataManager.instance.SaveGame();
     }
 
     public void PlayDialogue()
@@ -324,16 +326,20 @@ public class DialogueManager : MonoBehaviour
 
     private void CollectDandelion()
     {
-        if (DataManager.instance.Data.DandelionsInGame.ContainsKey(interactingObject))
+        string dataName = interactingObject.gameObject.name + DataManager.instance.Data.CurrentSceneName;
+
+        if (DataManager.instance.Data.DandelionsInGame.ContainsKey(dataName))
         {
-            DataManager.instance.Data.DandelionsInGame[interactingObject] = false;
+            Debug.Log($"Setting {dataName} to false (picked up)");
+
+            DataManager.instance.Data.DandelionsInGame[dataName] = false;
         }
 
         DataManager.instance.Data.CurrentDandelions++;
 
         currentDandelions.text = DataManager.instance.Data.CurrentDandelions.ToString();
 
-        Destroy(interactingObject);
+        Destroy(interactingObject, .1f);
 
         if (dialogueIndex >= currentDialogue.Length)
         {
