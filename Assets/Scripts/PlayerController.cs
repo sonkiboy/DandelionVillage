@@ -122,6 +122,8 @@ public class PlayerController : MonoBehaviour, IDataPersistance
 
     public void LoadData(GameData data)
     {
+        StartCoroutine(GameObject.FindAnyObjectByType<UITransision>().FadeIn(1));
+
         //Debug.Log($"Loading Player Data | Spawn Point: {DataManager.instance.Data.SpawnPointName}");
 
         if (DataManager.instance.Data.SpawnPointName != string.Empty)

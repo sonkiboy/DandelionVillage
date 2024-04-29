@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
  
 using UnityEngine.SceneManagement;
@@ -31,7 +32,7 @@ public class ChangeSceneBehavior : MonoBehaviour
         {
             if (GoToScene != null && SpawnPointName != null)
             {
-                TransitionScene();
+                StartCoroutine(TransitionScene());
             }
 
             else
@@ -42,7 +43,7 @@ public class ChangeSceneBehavior : MonoBehaviour
     }
    
 
-    void TransitionScene() 
+    IEnumerator TransitionScene() 
     {
 
         
@@ -53,7 +54,8 @@ public class ChangeSceneBehavior : MonoBehaviour
 
 
         DataManager.instance.SaveGame();
-
+        StartCoroutine(GameObject.FindAnyObjectByType<UITransision>().FadeOut(1));
+        yield return new WaitForSeconds(1);
         // load the scene
         SceneManager.LoadScene(GoToScene);
 

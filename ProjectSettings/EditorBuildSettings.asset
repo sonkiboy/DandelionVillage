@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Chaple.unity
     guid: 4ab4c75f51a56d84f91491d845331086
+  - enabled: 1
+    path: Assets/Scenes/DarkWorld.unity
+    guid: e7394d64b24b4954a99ba1a9ed30d14e
   m_configObjects: {}
