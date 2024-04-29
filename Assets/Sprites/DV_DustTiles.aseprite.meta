@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 396ee4f4f7d7fcc45a217af10e34d519
+guid: a1046cc9b2e9c8a49b0225c81eb2f735
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -75,7 +75,7 @@ ScriptedImporter:
     importHiddenLayers: 0
     layerImportMode: 1
     defaultPivotSpace: 0
-    defaultPivotAlignment: 0
+    defaultPivotAlignment: 7
     customPivotPosition: {x: 0.5, y: 0.5}
     spritePadding: 0
     generateModelPrefab: 1
@@ -87,7 +87,7 @@ ScriptedImporter:
     importHiddenLayers: 0
     layerImportMode: 1
     defaultPivotSpace: 0
-    defaultPivotAlignment: 0
+    defaultPivotAlignment: 7
     customPivotPosition: {x: 0.5, y: 0.5}
     spritePadding: 0
     generateModelPrefab: 1
@@ -95,7 +95,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638499460728301553
+  platformSettingsDirtyTick: 638499478712657865
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -119,18 +119,18 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: DV_CollisionTilel
+  - name: DV_DustTiles
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0.511628, y: -0.15384616}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 16
-      height: 16
-    spriteID: 953fbe7e181b2d5459793210f0839246
+      width: 43
+      height: 13
+    spriteID: 399a5e4f89a582b46a6e58750191107c
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -140,18 +140,18 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
   spriteSheetImportData:
-  - name: DV_CollisionTilel_0
+  - name: DV_DustTiles_0
     originalName: 
-    pivot: {x: 0, y: 0}
+    pivot: {x: 0.5, y: 0.5}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4
-      y: 4
+      x: 2
+      y: 3
       width: 16
       height: 16
-    spriteID: e7aa1018ecd3d324bbd2cb98560274f2
+    spriteID: 1337ca8717826e648b324c253a4ec2fd
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -160,18 +160,18 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
-  - name: DV_CollisionTilel_1
+  - name: DV_DustTiles_1
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 20
-      y: 4
+      x: 18
+      y: 3
       width: 16
       height: 16
-    spriteID: 46d29f9d2bbba94409a74fac0d9daba6
+    spriteID: 7a3c48c294f838640bd4470b72ea8a21
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -180,58 +180,18 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
-  - name: DV_CollisionTilel_2
+  - name: DV_DustTiles_2
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 36
-      y: 4
+      x: 34
+      y: 3
       width: 16
       height: 16
-    spriteID: 26cf158e0ce5b274f85acc939da8fd7b
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 0, y: 0}
-  - name: DV_CollisionTilel_3
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 52
-      y: 4
-      width: 16
-      height: 16
-    spriteID: 185fff4cd5f0e6944b7248ee2efb8aac
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 0, y: 0}
-  - name: DV_CollisionTilel_4
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 68
-      y: 4
-      width: 16
-      height: 16
-    spriteID: d0dfedb472e60414d8035c44954429fc
+    spriteID: 1d64b206ccf7c474fb1842a860ff214d
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -242,20 +202,20 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   asepriteLayers:
   - layerIndex: 0
-    guid: -1940386929
-    name: DV_CollisionTilel
+    guid: 1287651430
+    name: DV_DustTiles
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: DV_CollisionTilel
+    - name: DV_DustTiles
       frameIndex: 0
       cellRect:
-        x: 0
-        y: 0
-        width: 80
-        height: 16
-      spriteId: 953fbe7e181b2d5459793210f0839246
+        x: 2
+        y: 2
+        width: 43
+        height: 13
+      spriteId: 399a5e4f89a582b46a6e58750191107c
     linkedCells: []
     parentIndex: -1
   platformSettings:
@@ -297,4 +257,4 @@ ScriptedImporter:
     androidETC2FallbackOverride: 0
   secondarySpriteTextures: []
   spritePackingTag: 
-  canvasSize: {x: 80, y: 16}
+  canvasSize: {x: 48, y: 16}

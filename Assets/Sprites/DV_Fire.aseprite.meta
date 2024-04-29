@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 396ee4f4f7d7fcc45a217af10e34d519
+guid: ecc3e05571f6c944c9f98c28385f33fb
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -71,11 +71,11 @@ ScriptedImporter:
     textureFormatSet: 0
     applyGammaDecoding: 0
   previousAsepriteImporterSettings:
-    fileImportMode: 0
+    fileImportMode: 1
     importHiddenLayers: 0
     layerImportMode: 1
     defaultPivotSpace: 0
-    defaultPivotAlignment: 0
+    defaultPivotAlignment: 7
     customPivotPosition: {x: 0.5, y: 0.5}
     spritePadding: 0
     generateModelPrefab: 1
@@ -83,11 +83,11 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   asepriteImporterSettings:
-    fileImportMode: 0
+    fileImportMode: 1
     importHiddenLayers: 0
     layerImportMode: 1
     defaultPivotSpace: 0
-    defaultPivotAlignment: 0
+    defaultPivotAlignment: 7
     customPivotPosition: {x: 0.5, y: 0.5}
     spritePadding: 0
     generateModelPrefab: 1
@@ -95,7 +95,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638499460728301553
+  platformSettingsDirtyTick: 638499488268185723
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -119,9 +119,9 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: DV_CollisionTilel
+  - name: DV_Fire_Frame_0
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -130,7 +130,7 @@ ScriptedImporter:
       y: 4
       width: 16
       height: 16
-    spriteID: 953fbe7e181b2d5459793210f0839246
+    spriteID: 83c3eb7462fbb9d4bb6acaa17532fea0
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -139,19 +139,18 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
-  spriteSheetImportData:
-  - name: DV_CollisionTilel_0
+  - name: DV_Fire_Frame_1
     originalName: 
-    pivot: {x: 0, y: 0}
-    alignment: 0
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
-      y: 4
+      y: 52
       width: 16
-      height: 16
-    spriteID: e7aa1018ecd3d324bbd2cb98560274f2
+      height: 15
+    spriteID: 2fd47a8c761bcf6438ea515cd5d40928
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -159,19 +158,19 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 0, y: 0}
-  - name: DV_CollisionTilel_1
+    uvTransform: {x: 4, y: 52}
+  - name: DV_Fire_Frame_2
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 20
-      y: 4
+      x: 4
+      y: 75
       width: 16
-      height: 16
-    spriteID: 46d29f9d2bbba94409a74fac0d9daba6
+      height: 15
+    spriteID: a8a08819e84121845a967cfcf82be11f
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -179,19 +178,19 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 0, y: 0}
-  - name: DV_CollisionTilel_2
+    uvTransform: {x: 4, y: 75}
+  - name: DV_Fire_Frame_3
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 36
-      y: 4
+      x: 4
+      y: 98
       width: 16
-      height: 16
-    spriteID: 26cf158e0ce5b274f85acc939da8fd7b
+      height: 15
+    spriteID: 43671d2294a768c4ea9290b33ef9afa5
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -199,19 +198,19 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 0, y: 0}
-  - name: DV_CollisionTilel_3
+    uvTransform: {x: 4, y: 98}
+  - name: DV_Fire_Frame_4
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 52
+      x: 28
       y: 4
       width: 16
-      height: 16
-    spriteID: 185fff4cd5f0e6944b7248ee2efb8aac
+      height: 15
+    spriteID: a8720317e5be78146879cb894580d79f
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -219,19 +218,19 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 0, y: 0}
-  - name: DV_CollisionTilel_4
+    uvTransform: {x: 28, y: 4}
+  - name: DV_Fire_Frame_5
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 68
-      y: 4
+      x: 4
+      y: 28
       width: 16
       height: 16
-    spriteID: d0dfedb472e60414d8035c44954429fc
+    spriteID: 5dec9db5fed6c284285059172d8a27c0
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -239,23 +238,64 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 0, y: 0}
+    uvTransform: {x: 4, y: 28}
+  spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: -1940386929
-    name: DV_CollisionTilel
+    guid: 351508145
+    name: DV_Fire
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: DV_CollisionTilel
+    - name: DV_Fire_Frame_0
       frameIndex: 0
       cellRect:
         x: 0
         y: 0
-        width: 80
+        width: 16
         height: 16
-      spriteId: 953fbe7e181b2d5459793210f0839246
+      spriteId: 83c3eb7462fbb9d4bb6acaa17532fea0
+    - name: DV_Fire_Frame_1
+      frameIndex: 1
+      cellRect:
+        x: 0
+        y: 0
+        width: 16
+        height: 15
+      spriteId: 2fd47a8c761bcf6438ea515cd5d40928
+    - name: DV_Fire_Frame_2
+      frameIndex: 2
+      cellRect:
+        x: 0
+        y: 0
+        width: 16
+        height: 15
+      spriteId: a8a08819e84121845a967cfcf82be11f
+    - name: DV_Fire_Frame_3
+      frameIndex: 3
+      cellRect:
+        x: 0
+        y: 0
+        width: 16
+        height: 15
+      spriteId: 43671d2294a768c4ea9290b33ef9afa5
+    - name: DV_Fire_Frame_4
+      frameIndex: 4
+      cellRect:
+        x: 0
+        y: 0
+        width: 16
+        height: 15
+      spriteId: a8720317e5be78146879cb894580d79f
+    - name: DV_Fire_Frame_5
+      frameIndex: 5
+      cellRect:
+        x: 0
+        y: 0
+        width: 16
+        height: 16
+      spriteId: 5dec9db5fed6c284285059172d8a27c0
     linkedCells: []
     parentIndex: -1
   platformSettings:
@@ -297,4 +337,4 @@ ScriptedImporter:
     androidETC2FallbackOverride: 0
   secondarySpriteTextures: []
   spritePackingTag: 
-  canvasSize: {x: 80, y: 16}
+  canvasSize: {x: 16, y: 16}

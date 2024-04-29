@@ -15,6 +15,8 @@ public class DataManager : MonoBehaviour
 
     List<IDataPersistance> dataPersistances = new List<IDataPersistance>();
 
+    public UITransision transition;
+   
     public GameData Data;
 
     public static DataManager instance { get; private set; }
@@ -28,6 +30,8 @@ public class DataManager : MonoBehaviour
             return;
         }
         instance = this;
+
+        transition = GameObject.FindAnyObjectByType<UITransision>();
 
         DontDestroyOnLoad(this.gameObject);
     }
@@ -53,6 +57,7 @@ public class DataManager : MonoBehaviour
     {
         this.dataPersistances = GetAllDataObjects();
         GetAllDandelions();
+        
         LoadGame();
     }
 
@@ -86,10 +91,13 @@ public class DataManager : MonoBehaviour
 
     public void LoadGame()
     {
+
+
         foreach (IDataPersistance obj in dataPersistances)
         {
             obj.LoadData(instance.Data);
         }
+        StartCoroutine(transition.FadeIn(1));
 
 
     }
@@ -123,5 +131,41 @@ public class DataManager : MonoBehaviour
         }
     }
 
+    public void LoadScene(string SpawnPointName, string GoToScene)
+    {
+        StartCoroutine(TransitionScene(SpawnPointName, GoToScene));
+
+
+    }
     
+
+    IEnumerator TransitionScene(string SpawnPointName, string GoToScene)
+    {
+
+
+
+        // put the spawn point name into the data manager script so the player controller can use it
+        DataManager.instance.Data.SpawnPointName = SpawnPointName;
+
+        UITransision transision = FindAnyObjectByType<UITransision>();
+
+        StartCoroutine(transision.FadeOut(1));
+
+        while (transision.isFading)
+        {
+            yield return null;
+        }
+
+        DataManager.instance.SaveGame();
+        
+        yield return null;
+        
+        // load the scene
+        SceneManager.LoadScene(GoToScene);
+
+        //Debug.Log($"Data: held obj {DataManager.heldObj.name}");
+
+    }
+
+
 }

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 396ee4f4f7d7fcc45a217af10e34d519
+guid: cff2cd603a94b794db1b8eba83a693b6
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -71,11 +71,11 @@ ScriptedImporter:
     textureFormatSet: 0
     applyGammaDecoding: 0
   previousAsepriteImporterSettings:
-    fileImportMode: 0
+    fileImportMode: 1
     importHiddenLayers: 0
     layerImportMode: 1
     defaultPivotSpace: 0
-    defaultPivotAlignment: 0
+    defaultPivotAlignment: 7
     customPivotPosition: {x: 0.5, y: 0.5}
     spritePadding: 0
     generateModelPrefab: 1
@@ -83,11 +83,11 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   asepriteImporterSettings:
-    fileImportMode: 0
+    fileImportMode: 1
     importHiddenLayers: 0
     layerImportMode: 1
     defaultPivotSpace: 0
-    defaultPivotAlignment: 0
+    defaultPivotAlignment: 7
     customPivotPosition: {x: 0.5, y: 0.5}
     spritePadding: 0
     generateModelPrefab: 1
@@ -95,7 +95,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638499460728301553
+  platformSettingsDirtyTick: 638499459048718712
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -119,18 +119,18 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: DV_CollisionTilel
+  - name: DV_DarkWell
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 9
+    pivot: {x: 0, y: 0}
+    alignment: 6
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 16
-      height: 16
-    spriteID: 953fbe7e181b2d5459793210f0839246
+      width: 26
+      height: 32
+    spriteID: 3fba026d45ef0314380c62c1ed35ccb4
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -139,123 +139,23 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
-  spriteSheetImportData:
-  - name: DV_CollisionTilel_0
-    originalName: 
-    pivot: {x: 0, y: 0}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 4
-      width: 16
-      height: 16
-    spriteID: e7aa1018ecd3d324bbd2cb98560274f2
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 0, y: 0}
-  - name: DV_CollisionTilel_1
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 20
-      y: 4
-      width: 16
-      height: 16
-    spriteID: 46d29f9d2bbba94409a74fac0d9daba6
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 0, y: 0}
-  - name: DV_CollisionTilel_2
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 36
-      y: 4
-      width: 16
-      height: 16
-    spriteID: 26cf158e0ce5b274f85acc939da8fd7b
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 0, y: 0}
-  - name: DV_CollisionTilel_3
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 52
-      y: 4
-      width: 16
-      height: 16
-    spriteID: 185fff4cd5f0e6944b7248ee2efb8aac
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 0, y: 0}
-  - name: DV_CollisionTilel_4
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 68
-      y: 4
-      width: 16
-      height: 16
-    spriteID: d0dfedb472e60414d8035c44954429fc
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 0, y: 0}
+  spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: -1940386929
-    name: DV_CollisionTilel
+    guid: 1374598167
+    name: DV_DarkWell
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: DV_CollisionTilel
+    - name: DV_DarkWell
       frameIndex: 0
       cellRect:
-        x: 0
+        x: 3
         y: 0
-        width: 80
-        height: 16
-      spriteId: 953fbe7e181b2d5459793210f0839246
+        width: 26
+        height: 32
+      spriteId: 3fba026d45ef0314380c62c1ed35ccb4
     linkedCells: []
     parentIndex: -1
   platformSettings:
@@ -297,4 +197,4 @@ ScriptedImporter:
     androidETC2FallbackOverride: 0
   secondarySpriteTextures: []
   spritePackingTag: 
-  canvasSize: {x: 80, y: 16}
+  canvasSize: {x: 32, y: 32}

@@ -32,7 +32,7 @@ public class ChangeSceneBehavior : MonoBehaviour
         {
             if (GoToScene != null && SpawnPointName != null)
             {
-                StartCoroutine(TransitionScene());
+                DataManager.instance.LoadScene(SpawnPointName, GoToScene);
             }
 
             else
@@ -40,26 +40,10 @@ public class ChangeSceneBehavior : MonoBehaviour
                 Debug.Log("Please input Scene name and Spawn name");
             }
         }
+
+
     }
    
 
-    IEnumerator TransitionScene() 
-    {
-
-        
-
-        // put the spawn point name into the data manager script so the player controller can use it
-        DataManager.instance.Data.SpawnPointName = SpawnPointName;
-
-
-
-        DataManager.instance.SaveGame();
-        StartCoroutine(GameObject.FindAnyObjectByType<UITransision>().FadeOut(1));
-        yield return new WaitForSeconds(1);
-        // load the scene
-        SceneManager.LoadScene(GoToScene);
-
-        //Debug.Log($"Data: held obj {DataManager.heldObj.name}");
-
-    }
+    
 }

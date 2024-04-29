@@ -15,7 +15,7 @@ public class DialogueManager : MonoBehaviour
     Image topBar;
     TextMeshProUGUI nameText;
     TextMeshProUGUI currentDandelions;
-    TextMeshProUGUI maxDandelions;
+    TextMeshProUGUI friendScore;
 
     GameObject dialogueObj;
     TextMeshProUGUI dialogueText;
@@ -88,7 +88,7 @@ public class DialogueManager : MonoBehaviour
         topBar = uiObj.transform.Find("BG").GetComponent<Image>();
         nameText = uiObj.transform.Find("NameText").GetComponent<TextMeshProUGUI>();
         currentDandelions = uiObj.transform.Find("Score").GetComponent<TextMeshProUGUI>();
-        maxDandelions = uiObj.transform.Find("ScoreMax").GetComponent<TextMeshProUGUI>();
+        friendScore = uiObj.transform.Find("ScoreMax").GetComponent<TextMeshProUGUI>();
 
 
     }
@@ -246,7 +246,20 @@ public class DialogueManager : MonoBehaviour
                     Application.Quit();
 
                     break;
+                case DialogueEvent.DialogueEventType.ChangeScene:
 
+                    DataManager.instance.LoadScene(nextEvent.ChoiceOneText, nextEvent.ChoiceTwoText);
+
+                    CloseDialogue();
+
+                    break;
+
+                case DialogueEvent.DialogueEventType.BurnFlower:
+
+                    BurnFlower();
+
+                    
+                    break;
 
             }
         }
@@ -435,7 +448,7 @@ public class DialogueManager : MonoBehaviour
         choiceTwo.color = newColor;
         nameText.color = newColor;
         currentDandelions.color = newColor;
-        maxDandelions.color = newColor;
+        friendScore.color = newColor;
         topBar.color = newColor;
         selectionArrow.GetComponent<Image>().color = newColor;
     }
@@ -462,6 +475,19 @@ public class DialogueManager : MonoBehaviour
         DataManager.instance.Data.CurrentDandelions--;
 
         currentDandelions.text = DataManager.instance.Data.CurrentDandelions.ToString();
+        friendScore.text = DataManager.instance.Data.GiftedDandelions.ToString();
+
+        dialogueIndex++;
+        PlayDialogue();
+    }
+
+    void BurnFlower()
+    {
+        DataManager.instance.Data.GiftedDandelions--;
+        DataManager.instance.Data.CurrentDandelions--;
+
+        currentDandelions.text = DataManager.instance.Data.CurrentDandelions.ToString();
+        friendScore.text = DataManager.instance.Data.GiftedDandelions.ToString();
 
         dialogueIndex++;
         PlayDialogue();

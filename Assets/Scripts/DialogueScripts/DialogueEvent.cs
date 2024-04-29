@@ -18,6 +18,8 @@ public class DialogueEvent
         EndDialogue,
         GlitchMap,
         QuitGame,
+        ChangeScene,
+        BurnFlower
 
     }
 
