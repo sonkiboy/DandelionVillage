@@ -192,6 +192,356 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a085ed3bf87611f4eac68cc8887a8132, type: 3}
+--- !u!1 &192812275 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3935412355772435066, guid: 6bac401e6b3cd4242a26dc8b7e1e844e, type: 3}
+  m_PrefabInstance: {fileID: 345734823}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &192812276
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 192812275}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 690adcad8d95e0d40996e5026f31155a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  StartingEventIndex: 0
+  ListOfEvents:
+  - Type: 0
+    checkDandelion: 0
+    TextSpeed: 1
+    DialogueText: ...
+    ChoiceOneText: 
+    ChoiceOneDestination: 0
+    ChoiceTwoText: 
+    ChoiceTwoDestination: 0
+    PageToChangeTo: 0
+  - Type: 0
+    checkDandelion: 0
+    TextSpeed: 1
+    DialogueText: You aren't welcome here demon
+    ChoiceOneText: 
+    ChoiceOneDestination: 0
+    ChoiceTwoText: 
+    ChoiceTwoDestination: 0
+    PageToChangeTo: 0
+  - Type: 0
+    checkDandelion: 0
+    TextSpeed: 1
+    DialogueText: Not after your destruction of the things we hold most dear
+    ChoiceOneText: 
+    ChoiceOneDestination: 0
+    ChoiceTwoText: 
+    ChoiceTwoDestination: 0
+    PageToChangeTo: 0
+  - Type: 0
+    checkDandelion: 0
+    TextSpeed: 1
+    DialogueText: The very fabric keeping together our world
+    ChoiceOneText: 
+    ChoiceOneDestination: 0
+    ChoiceTwoText: 
+    ChoiceTwoDestination: 0
+    PageToChangeTo: 0
+  - Type: 0
+    checkDandelion: 0
+    TextSpeed: 1
+    DialogueText: This world, as small as it is, is our only home
+    ChoiceOneText: 
+    ChoiceOneDestination: 0
+    ChoiceTwoText: 
+    ChoiceTwoDestination: 0
+    PageToChangeTo: 0
+  - Type: 0
+    checkDandelion: 0
+    TextSpeed: 1
+    DialogueText: To destroy it would leave all those who live here stuck in an endless
+      sleep
+    ChoiceOneText: 
+    ChoiceOneDestination: 0
+    ChoiceTwoText: 
+    ChoiceTwoDestination: 0
+    PageToChangeTo: 0
+  - Type: 0
+    checkDandelion: 0
+    TextSpeed: 1
+    DialogueText: Suspended between life and death
+    ChoiceOneText: 
+    ChoiceOneDestination: 0
+    ChoiceTwoText: 
+    ChoiceTwoDestination: 0
+    PageToChangeTo: 0
+  - Type: 0
+    checkDandelion: 0
+    TextSpeed: 1
+    DialogueText: What a horrible fate that would be.
+    ChoiceOneText: 
+    ChoiceOneDestination: 0
+    ChoiceTwoText: 
+    ChoiceTwoDestination: 0
+    PageToChangeTo: 0
+  - Type: 0
+    checkDandelion: 0
+    TextSpeed: 1
+    DialogueText: Thus, I cannot let you leave here.
+    ChoiceOneText: 
+    ChoiceOneDestination: 0
+    ChoiceTwoText: 
+    ChoiceTwoDestination: 0
+    PageToChangeTo: 0
+  - Type: 0
+    checkDandelion: 0
+    TextSpeed: 1
+    DialogueText: I cannot risk you putting this world in danger.
+    ChoiceOneText: 
+    ChoiceOneDestination: 0
+    ChoiceTwoText: 
+    ChoiceTwoDestination: 0
+    PageToChangeTo: 0
+  - Type: 0
+    checkDandelion: 0
+    TextSpeed: 1
+    DialogueText: ...
+    ChoiceOneText: 
+    ChoiceOneDestination: 0
+    ChoiceTwoText: 
+    ChoiceTwoDestination: 0
+    PageToChangeTo: 0
+  - Type: 0
+    checkDandelion: 0
+    TextSpeed: 1
+    DialogueText: As you seem to enjoy delving deeper and deeper into this world
+    ChoiceOneText: 
+    ChoiceOneDestination: 0
+    ChoiceTwoText: 
+    ChoiceTwoDestination: 0
+    PageToChangeTo: 0
+  - Type: 0
+    checkDandelion: 0
+    TextSpeed: 1
+    DialogueText: I find it fitting to send you falling in the depths of this world
+    ChoiceOneText: 
+    ChoiceOneDestination: 0
+    ChoiceTwoText: 
+    ChoiceTwoDestination: 0
+    PageToChangeTo: 0
+  - Type: 0
+    checkDandelion: 0
+    TextSpeed: 1
+    DialogueText: And as you fall, deeper  and deeper
+    ChoiceOneText: 
+    ChoiceOneDestination: 0
+    ChoiceTwoText: 
+    ChoiceTwoDestination: 0
+    PageToChangeTo: 0
+  - Type: 0
+    checkDandelion: 0
+    TextSpeed: 1
+    DialogueText: Never to be seen again...
+    ChoiceOneText: 
+    ChoiceOneDestination: 0
+    ChoiceTwoText: 
+    ChoiceTwoDestination: 0
+    PageToChangeTo: 0
+  - Type: 0
+    checkDandelion: 0
+    TextSpeed: 1
+    DialogueText: Just know...
+    ChoiceOneText: 
+    ChoiceOneDestination: 0
+    ChoiceTwoText: 
+    ChoiceTwoDestination: 0
+    PageToChangeTo: 0
+  - Type: 0
+    checkDandelion: 0
+    TextSpeed: 1
+    DialogueText: This is what you wanted.
+    ChoiceOneText: 
+    ChoiceOneDestination: 0
+    ChoiceTwoText: 
+    ChoiceTwoDestination: 0
+    PageToChangeTo: 0
+  - Type: 8
+    checkDandelion: 0
+    TextSpeed: 4
+    DialogueText: This is what you wanted.
+    ChoiceOneText: 
+    ChoiceOneDestination: 0
+    ChoiceTwoText: 
+    ChoiceTwoDestination: 0
+    PageToChangeTo: 0
+  - Type: 9
+    checkDandelion: 0
+    TextSpeed: 4
+    DialogueText: This is what you wanted.
+    ChoiceOneText: 
+    ChoiceOneDestination: 0
+    ChoiceTwoText: 
+    ChoiceTwoDestination: 0
+    PageToChangeTo: 0
+--- !u!114 &192812277
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 192812275}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 690adcad8d95e0d40996e5026f31155a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  StartingEventIndex: 0
+  ListOfEvents:
+  - Type: 0
+    checkDandelion: 0
+    TextSpeed: 1
+    DialogueText: To describe something as a weed is to declare it unwanted
+    ChoiceOneText: 
+    ChoiceOneDestination: 0
+    ChoiceTwoText: 
+    ChoiceTwoDestination: 0
+    PageToChangeTo: 0
+  - Type: 0
+    checkDandelion: 0
+    TextSpeed: 1
+    DialogueText: Something that does not belong where it naturally grows
+    ChoiceOneText: 
+    ChoiceOneDestination: 0
+    ChoiceTwoText: 
+    ChoiceTwoDestination: 0
+    PageToChangeTo: 0
+  - Type: 0
+    checkDandelion: 0
+    TextSpeed: 1
+    DialogueText: Dandelions are seen by many as weeds
+    ChoiceOneText: 
+    ChoiceOneDestination: 0
+    ChoiceTwoText: 
+    ChoiceTwoDestination: 0
+    PageToChangeTo: 0
+  - Type: 0
+    checkDandelion: 0
+    TextSpeed: 1
+    DialogueText: 'Obstructions in our modern world. '
+    ChoiceOneText: 
+    ChoiceOneDestination: 0
+    ChoiceTwoText: 
+    ChoiceTwoDestination: 0
+    PageToChangeTo: 0
+  - Type: 0
+    checkDandelion: 0
+    TextSpeed: 1
+    DialogueText: As a result many people fail to see its true beauty.
+    ChoiceOneText: 
+    ChoiceOneDestination: 0
+    ChoiceTwoText: 
+    ChoiceTwoDestination: 0
+    PageToChangeTo: 0
+  - Type: 0
+    checkDandelion: 0
+    TextSpeed: 1
+    DialogueText: We in this world welcome Dandelions into our lives, we seem them
+      as pure and beautiful
+    ChoiceOneText: 
+    ChoiceOneDestination: 0
+    ChoiceTwoText: 
+    ChoiceTwoDestination: 0
+    PageToChangeTo: 0
+  - Type: 0
+    checkDandelion: 0
+    TextSpeed: 1
+    DialogueText: A testimate that even in the most baren of wastelands, life can
+      still flourish
+    ChoiceOneText: 
+    ChoiceOneDestination: 0
+    ChoiceTwoText: 
+    ChoiceTwoDestination: 0
+    PageToChangeTo: 0
+  - Type: 0
+    checkDandelion: 0
+    TextSpeed: 1
+    DialogueText: That could be you, you know?
+    ChoiceOneText: 
+    ChoiceOneDestination: 0
+    ChoiceTwoText: 
+    ChoiceTwoDestination: 0
+    PageToChangeTo: 0
+  - Type: 0
+    checkDandelion: 0
+    TextSpeed: 1
+    DialogueText: You could be that shining light to help this world
+    ChoiceOneText: 
+    ChoiceOneDestination: 0
+    ChoiceTwoText: 
+    ChoiceTwoDestination: 0
+    PageToChangeTo: 0
+  - Type: 0
+    checkDandelion: 0
+    TextSpeed: 1
+    DialogueText: Stay here with us
+    ChoiceOneText: 
+    ChoiceOneDestination: 0
+    ChoiceTwoText: 
+    ChoiceTwoDestination: 0
+    PageToChangeTo: 0
+  - Type: 0
+    checkDandelion: 0
+    TextSpeed: 1
+    DialogueText: Help shape a new, beautiful world with us
+    ChoiceOneText: 
+    ChoiceOneDestination: 0
+    ChoiceTwoText: 
+    ChoiceTwoDestination: 0
+    PageToChangeTo: 0
+  - Type: 8
+    checkDandelion: 0
+    TextSpeed: 1
+    DialogueText: 
+    ChoiceOneText: 
+    ChoiceOneDestination: 0
+    ChoiceTwoText: 
+    ChoiceTwoDestination: 0
+    PageToChangeTo: 0
+  - Type: 9
+    checkDandelion: 0
+    TextSpeed: 4
+    DialogueText: 
+    ChoiceOneText: 
+    ChoiceOneDestination: 0
+    ChoiceTwoText: 
+    ChoiceTwoDestination: 0
+    PageToChangeTo: 0
+--- !u!114 &192812278 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2362690875043073982, guid: 6bac401e6b3cd4242a26dc8b7e1e844e, type: 3}
+  m_PrefabInstance: {fileID: 345734823}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 192812275}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 690adcad8d95e0d40996e5026f31155a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &192812279
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 192812275}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a524fa4e1d479fb41b9445dcf206ba35, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GoodEnd: {fileID: 192812277}
+  NeutralEnd: {fileID: 192812278}
+  BadEnd: {fileID: 192812276}
 --- !u!4 &195005612 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3092980286381929033, guid: 3dcb22f00aebb294f940f7633e2cb51d, type: 3}
@@ -395,7 +745,16 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3935412355772435066, guid: 6bac401e6b3cd4242a26dc8b7e1e844e, type: 3}
+      insertIndex: 2
+      addedObject: {fileID: 192812279}
+    - targetCorrespondingSourceObject: {fileID: 3935412355772435066, guid: 6bac401e6b3cd4242a26dc8b7e1e844e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 192812277}
+    - targetCorrespondingSourceObject: {fileID: 3935412355772435066, guid: 6bac401e6b3cd4242a26dc8b7e1e844e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 192812276}
   m_SourcePrefab: {fileID: 100100000, guid: 6bac401e6b3cd4242a26dc8b7e1e844e, type: 3}
 --- !u!1 &446490252
 GameObject:
@@ -636,19 +995,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8200087496365455267, guid: 74d5e536d628a444e97470ded403e5bf, type: 3}
       propertyPath: m_NormalizedViewPortRect.x
-      value: 0
+      value: 0.007961784
       objectReference: {fileID: 0}
     - target: {fileID: 8200087496365455267, guid: 74d5e536d628a444e97470ded403e5bf, type: 3}
       propertyPath: m_NormalizedViewPortRect.y
-      value: 0
+      value: 0.007961784
       objectReference: {fileID: 0}
     - target: {fileID: 8200087496365455267, guid: 74d5e536d628a444e97470ded403e5bf, type: 3}
       propertyPath: m_NormalizedViewPortRect.width
-      value: 0.99838454
+      value: 0.98407644
       objectReference: {fileID: 0}
     - target: {fileID: 8200087496365455267, guid: 74d5e536d628a444e97470ded403e5bf, type: 3}
       propertyPath: m_NormalizedViewPortRect.height
-      value: 0.99838454
+      value: 0.98407644
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1209,6 +1568,10 @@ PrefabInstance:
     - target: {fileID: 5944829794956462610, guid: d3874e4b3fe4c774c86a0d01e7576917, type: 3}
       propertyPath: m_fontColor32.rgba
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8526977447027032968, guid: d3874e4b3fe4c774c86a0d01e7576917, type: 3}
+      propertyPath: Data.GiftedDandelions
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9110284592736847933, guid: d3874e4b3fe4c774c86a0d01e7576917, type: 3}
       propertyPath: m_fontColor.b

@@ -8,7 +8,7 @@ public class MainMenu : MonoBehaviour
     public GameObject Title;
     public GameObject StartButton;
     public GameObject QuitButton;
-
+    public GameObject Instructions;
 
     public float InitialDelay;
     public float ScrollSpeed;
@@ -34,7 +34,12 @@ public class MainMenu : MonoBehaviour
 
     private IEnumerator TitleStart()
     {
-        yield return new WaitForSeconds(InitialDelay);
+        yield return new WaitForSeconds(InitialDelay/2);
+
+        Instructions.SetActive(false);
+
+        yield return new WaitForSeconds(InitialDelay / 2);
+
 
         while (this.transform.position.y < ScrollDistance)
         {
