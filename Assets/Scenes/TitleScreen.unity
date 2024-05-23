@@ -837,23 +837,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8200087496365455267, guid: 74d5e536d628a444e97470ded403e5bf, type: 3}
       propertyPath: orthographic size
-      value: 6
+      value: 6.4375
       objectReference: {fileID: 0}
     - target: {fileID: 8200087496365455267, guid: 74d5e536d628a444e97470ded403e5bf, type: 3}
       propertyPath: m_NormalizedViewPortRect.x
-      value: 0
+      value: 0.0171875
       objectReference: {fileID: 0}
     - target: {fileID: 8200087496365455267, guid: 74d5e536d628a444e97470ded403e5bf, type: 3}
       propertyPath: m_NormalizedViewPortRect.y
-      value: 0
+      value: 0.0171875
       objectReference: {fileID: 0}
     - target: {fileID: 8200087496365455267, guid: 74d5e536d628a444e97470ded403e5bf, type: 3}
       propertyPath: m_NormalizedViewPortRect.width
-      value: 1
+      value: 0.965625
       objectReference: {fileID: 0}
     - target: {fileID: 8200087496365455267, guid: 74d5e536d628a444e97470ded403e5bf, type: 3}
       propertyPath: m_NormalizedViewPortRect.height
-      value: 1
+      value: 0.965625
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
