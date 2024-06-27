@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [Serializable]
-public class DialogueEvent 
+public struct DialogueEvent 
 {
     public enum DialogueEventType
     {
@@ -25,9 +25,9 @@ public class DialogueEvent
 
     public DialogueEventType Type;
 
-    public bool checkDandelion = false;
+    public bool checkDandelion;
 
-    public int TextSpeed = 1;
+    public int TextSpeed;
 
     public string DialogueText;
 
